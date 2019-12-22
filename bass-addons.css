@@ -1,14 +1,14 @@
 /*
 BASSCSS ADONS
-Struktus css ini berdasarkan urutan module code Ace ( https://unpkg.com/ace-css@1.1.0/css/ace.min.css )
+Base from ( https://unpkg.com/ace-css@1.1.0/css/ace.min.css )
 
 1. Reserter
 2. Form 
 3. Input Range
-4. Progress bar
+4. Progress Bar
 5. Button 
 6. Media Object
-7. Basecss core
+7. Basecss Core => Load from basscss.css file
 8. Responsive Margin
 9. Responsive Padding
 10. Responsive Layout
@@ -25,8 +25,12 @@ Struktus css ini berdasarkan urutan module code Ace ( https://unpkg.com/ace-css@
 
 */
 
-* {
-	box-sizing: border-box
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Change the default font of your web site */ 
@@ -48,7 +52,12 @@ svg {
 }
 
 a {
-	color: #07c /* Change the default color of your web site */
+	color: #0074d9 /* Change the main color of your website */
+}
+
+a:hover,
+a:active {
+	color: #333 /* Change the second color of your website */
 }
 
 h1,
